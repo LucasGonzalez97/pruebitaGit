@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo del body */
+body {
+    background-color: rosybrown;
+    overflow-x: hidden;
+}
+
+/* estilo del titulo principal */
+.tituloH1 {
+    margin-left: 10px;
+    text-align: start;
+    color: #FF9A8C;
+    font-size: 7rem;
+    font-family: 'Dancing Script', cursive;
+    -webkit-text-stroke: 2px black;
+    
+}
+
+/* estilo tituloh2 */
+.tituloH2 {
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos del menu */
+
+.menu {
+    text-align: center;
+}
+
+.menu ul li {
+    list-style-type: none;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 0.1rem;
+    background-color: #e59388;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    position: relative;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    background-color: #bc6d63;
+    font-weight: bold;
+}
+
+/* estilos del submenu */
+.subMenu {
+    background-color: #d68b82;
+    border-radius: 1rem;
+}
+.subMenu a{
+    font-size: 20px;
+    border-radius: 1rem;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+}
+
+/* estilos del main */
+.imagenPadre img{
+    width: 100vw;
+    height: 70vh;
+    object-fit:cover;
+    position: relative;
+}
+.imagenPadre{
+    position: relative;
+}
+.imagenPadre .texto{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+}
+.papilo{
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.hijilo img{
+    width: 235px;
+}
+
+
+
+
+/* estilos de la tabla */
+.tabla {
+    color: brown;
+    font-size: 0.8rem;
+    position: sticky;
+    display: flex;
+    justify-content: end;
+    bottom: 0px;
+}
+
+footer {
+    text-align: center;
+    color: #ac3626;
+}
+
+/* estilos como comprar */
+.comoComprar {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+/* estilos de contacto */
+.imagenIg{
+    display: flex;
+    justify-content: center;
+}
+.imagenIg img{
+    width: 150px;
+}
+.wpp img:hover{
+    -webkit-transform:scale(0.9);transform:scale(0.9rem);
+}
+.imgIg img:hover{
+    -webkit-transform:scale(0.9);transform:scale(0.9rem);
+}
+
+@media screen and (min-width:1024px) {
+    .tituloH1 {
+        text-align: start;
+        color: #FF9A8C;
+        font-size: 10rem;
+        font-family: 'Dancing Script', cursive;
+        -webkit-text-stroke: 2px black;
+    }
+    
+    /* estilo tituloh2 */
+    .tituloH2 {
+        text-align: center;
+        color: black;
+        font-size: 2rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .menu{
+        margin-left: 300px;
+    }
+    .menu ul li{
+        font-size: 2.5rem;
+    }
+}
